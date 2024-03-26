@@ -65,10 +65,10 @@ export function History() {
         showsVerticalScrollIndicator={false}
       >
         {
-          history.map((item) => (
+          history.map((item, index) => (
             <Animated.View
               key={item.id}
-              entering={SlideInRight}
+              entering={SlideInRight.delay(index * 100)}
               exiting={SlideOutRight}
               layout={LinearTransition.springify()}
             >
