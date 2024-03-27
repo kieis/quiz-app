@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { FlatList, View } from "react-native";
 import { Trophy } from "phosphor-react-native";
 import { useNavigation } from "@react-navigation/native";
-import Animated from "react-native-reanimated";
 
 import { Level } from "../../components/Level";
 import { Header } from "../../components/Header";

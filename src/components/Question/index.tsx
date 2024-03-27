@@ -48,8 +48,9 @@ export function Question({
 
   return (
     <Animated.View
-      entering={enteringKeyFrame.duration(400)}
-      exiting={exitingKeyFrame.duration(400)}
+      // TODO: commented while expo doesn't release an update to current react reanimated -> https://github.com/expo/expo/issues/24923
+      //entering={enteringKeyFrame}
+      //exiting={exitingKeyFrame}
       style={styles.container}
     >
       <Text style={styles.title}>{question.title}</Text>
